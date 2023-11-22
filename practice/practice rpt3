@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<div class="container mt-3">
+<h2 class="text-center">취업 정보 계정 만들기</h2>
+<hr>
+  <div> <span class="text-danger">*</span> 필수 입력 항목</div>
+
+<form action="#">
+  <div class="my-3 p-2 text-bg-primary"> 기본 정보 </div>
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="my-3 me-3">
+          <label for="usr_name" class="form-label">이 름 <span class="text-danger">*</span> </label>
+          <input type="text" id="usr_name" name="usr_name" class="form-control" required>
+        </div>
+        <div class="mb-3 me-3">
+          <label for="email" class="form-label">이메일 <span class="text-danger">*</span> </label>
+          <input type="text" id="email" name="email" class="form-control" placeholder="id@domain_name" required>
+        </div>
+        <div class="mb-3 me-3">
+          <label for="pwd" class="form-label">암 호<span class="text-danger">*</span> </label>
+          <input type="password" id="pwd" name="pwd" class="form-control" placeholder="암호" required>
+        </div>
+        <div class="mb-3 me-3">
+          <label for="pwd_c" class="form-label">암호 확인<span class="text-danger">*</span> </label>
+          <input type="password" id="pwd_c" name="pwd" class="form-control" placeholder="암호 확인" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="my-3 me-3">
+          <label for="phone" class="form-label">모바일 폰<span class="text-danger">*</span> </label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="010-0000-0000" required>
+        </div>
+        <div class="mb-3 me-3">
+          <label for="home" class="form-label">홈 페이지</label>
+          <input type="text" id="home" name="home" class="form-control" placeholder="http://">
+        </div>
+        <div class="mb-3 me-3">
+          <label for="address" class="form-label">주 소<span class="text-danger">*</span> </label>
+          <input type="text" id="address" name="address" class="form-control" required>
+        </div>
+      </div>
+  </div>
+
+  <div class="mt-5 mb-3 p-2 text-bg-success">학 력</div>
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="my-3 me-3">
+          <label for="s_name" class="form-label">학교명<span class="text-danger">*</span> </label>
+          <input type="text" id="s_name" name="s_name" class="form-control">
+        </div>
+        <div class="mb-2 me-3">
+          <label for="major" class="form-label">전 공<span class="text-danger">*</span> </label>
+          <input type="text" id="major" name="major" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="my-3 me-3">
+          <label for="g_status" class="form-label">졸업 여부<span class="text-danger">*</span> </label>
+          <select name="status" id="g_status" class="form-select">
+            <option value="0">--- 선택 ---</option>
+            <option value="1">졸업 예정</option>
+            <option value="2">졸 업</option>
+          </select>
+        </div>
+        <div class="mb-3 me-3">
+          <label for="s_year" class="form-label">졸업(예정)년도<span class="text-danger">*</span> </label>
+          <input type="date" id="s_year" name="s_year" class="form-control">
+        </div>
+      </div>
+  </div>
+
+  <div class="mt-5 mb-3 p-2 text-bg-secondary">업무 경력</div>
+  <div class="my-3">
+    <div class="my-3 me-5 d-sm-inline">최종 직위 </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" class="form-check-input" name="position" id="emp1" checked>
+      <label for="emp1" class="form-check-label">사원급</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" name="position" id="emp2" class="form-check-input">
+      <label for="emp2" class="form-check-label">대리 ~ 과장</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" name="position" id="emp3" class="form-check-input">
+      <label for="emp3" class="form-check-label">차장급 이상</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" name="position" id="emp4" class="form-check-input">
+      <label for="emp4" class="form-check-label">임원급</label>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="duty" class="my-3 form-label">주요 담당 업무</label>
+    <textarea rows="10" class="form-control" id="duty" name="duty">담당했던 주요 업무를 기술하시오.</textarea>
+  </div>
+
+  <div class="my-5 text-center">
+    <input type="submit" class="btn btn-outline-primary" value="제 출">
+    <input type="reset" class="btn btn-outline-primary" value="재작성"></div>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+    <h2 class="text-center">취업 정보 계정 만들기</h2>
+    <div> <span class="text-danger">*</span> 필수 입력 항목</div>
+    <div class="my-3 p-2 text-bg-primary"> 기본 정보 </div>
+<form name="register" method="post">
+    <div class="bs"><label for="usr_name">이 름<span>*</span></label></div>
+        <input type="text" id="usr_name" name="name" size="8"><br>
+    <div class="bs"><label for="email">이메일<span>*</span></label></div>
+        <input type="email" id="email" name="email" size="15" placeholder="id@domain_name"><br>
+    <div class="bs"><label for="pwd">암호<span>*</span></label></div>
+        <input type="password" id="pwd" name="pwd" size="12"><br>
+    <div class="bs"><label for="pwdc">암호 확인<span>*</span></label></div>
+        <input type="password" id="pwdc" name="pwdc" size="12"><br>
+    <div class="bs"><label for="mpn">모바일 폰<span>*</span></label></div>
+        <input type="tel" id="mpn" name="mpn" size="13" placeholder="010-0000-0000"><br>
+    <div class="bs"><label for="php">개인 홈페이지</label></div>
+        <input type="url" id="php" name="php" size="30" placeholder="http://"><br>
+    <div class="bs"><label for="adds">주소<span>*</span></label></div>
+        <input type="text" id="adds" name="adds" size="30"><br>
+
+    <p class="bw">학 력</p>
+    <div class="bs"><label for="schn">학교 명<span>*</span></label></div>
+        <input type="text" id="schn" name="schn" size="12"><br>
+    <div class="bs"><label for="mjr">전 공<span>*</span></label></div>
+        <input type="text" id="mjr" name="mjr" size="12"><br>
+    <div class="bs"><label for="gch">졸업 여부<span>*</span></label></div>
+        <select name="gch" id="gch">
+            <option value="1">---선택---</option>
+            <option value="2">졸업 예정</option>
+            <option value="3">졸업</option>
+        </select><br>
+    <div class="bs"><label for="gdate">졸업(예정)일</label></div>
+        <input type="date" id="gdate" name="gdate"><br>
+
+    <p class="bw">업무 경력</p>
+    <div class="bs"><label for="wname">근무업체명</label></div>
+        <input type="text" id="wname" name="wname" size="20"><br>
+    <div class="bs"><label for="rank">직 위</label></div>
+        <input type="text" id="rank" name="rank" size="10"><br>
+    <div class="bs"><label for="task">담당 업무</label></div>
+        <textarea name="task" id="task" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea><br>
+    <div class="bs"><label for="wyr">근무년수</label></div>
+        <input type="number" id="wyr" name="wyr" min="0" max="10" step="0.5">년<br>
+
+    <p class="bw">자기소개서</p>
+    <div class="bs"><label for="file">첨부 파일</label></div>
+        <input type="file" id="file"><br>
+
+
+    <div style="margin-left: 200px;">
+        <button type="submit">제출</button>
+        <button type="reset">재작성</button>
+    </div>
+
+
+</form>
+</div>
+</body>
+</html>
